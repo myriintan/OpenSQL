@@ -83,7 +83,7 @@ const start = (aruga = new Client()) => {
 	    })
 	    } else {
         await aruga.simulateTyping(chat.id, true).then(async () => {
-          await aruga.sendText(chat.id, `Hai minna~, Im Aruga BOT. To find out the commands on this bot type ${prefix}menu`)
+          await aruga.sendText(chat.id, `Hai minna~, Im Riintan BOT. To find out the commands on this bot type ${prefix}menu`)
         })
 	    }
 	}
@@ -255,7 +255,7 @@ const start = (aruga = new Client()) => {
             if (isMedia || isQuotedVideo) {
                 if (mimetype === 'video/mp4' && message.duration < 90|| mimetype === 'image/gif' && message.duration < 90) {
                     var mediaData = await decryptMedia(message, uaOverride)
-                    aruga.reply(from, '[WAIT] Sedang di proses? silahkan tunggu ± 1 min!', id)
+                    aruga.reply(from, '[WAIT] Sedang di proses? silahkan tunggu Â± 1 min!', id)
                     var filename = `./media/stickergif.${mimetype.split('/')[1]}`
                     await fs.writeFileSync(filename, mediaData)
                     await exec(`gify ${filename} ./media/stickergf.gif --fps=60 --scale=240:240`, async function (error, stdout, stderr) {
