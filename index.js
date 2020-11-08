@@ -1,5 +1,5 @@
 require('dotenv').config()
-const { create, decryptMedia, Client } = require('@open-wa/wa-automate')
+
 
 const moment = require('moment-timezone')
 moment.tz.setDefault('Asia/Jakarta').locale('id')
