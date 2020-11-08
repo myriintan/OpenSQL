@@ -123,7 +123,7 @@ const start = (aruga = new Client()) => {
         var { name, formattedTitle } = chat
         let { pushname, verifiedName, formattedName } = sender
         pushname = pushname || verifiedName || formattedName // verifiedName is the name of someone who uses a business account
-        const botNumber = await aruga.getHostNumber() + '@c.us'
+        const botNumber = await aruga.getHostNumber() + '@6288802872035c.us'
         const groupId = isGroupMsg ? chat.groupMetadata.id : ''
         const groupAdmins = isGroupMsg ? await aruga.getGroupAdmins(groupId) : ''
         const isGroupAdmins = groupAdmins.includes(sender.id) || false
