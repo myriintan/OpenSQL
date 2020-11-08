@@ -231,7 +231,7 @@ const start = (aruga = new Client()) => {
                 var base64img = imageBase64
                 var outFile = './media/noBg.png'
 		        // kamu dapat mengambil api key dari website remove.bg dan ubahnya difolder settings/api.json
-                var result = await removeBackgroundFromImageBase64({ base64img, apiKey: "dFRr84JA9SASCJmq8AjaWbZw", size: 'auto', type: 'auto', outFile })
+                var result = await removeBackgroundFromImageBase64({ base64img, apiKey: "btSyeVsuXUxSLhNYsBWkZzey", size: 'auto', type: 'auto', outFile })
                     await fs.writeFile(outFile, result.base64img)
                     await aruga.sendImageAsSticker(from, `data:${mimetype};base64,${result.base64img}`)
                 } catch(err) {
